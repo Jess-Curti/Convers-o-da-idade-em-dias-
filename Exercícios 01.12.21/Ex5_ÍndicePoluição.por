@@ -8,29 +8,29 @@ programa
 	//Exercício 5
 
 	funcao inicio(){
-		real industria1, industria2, industria3, poluicao
+		real poluicao
 
 	escreva("Digite o índice de poluição = ")
 	leia(poluicao)
 
-	se (poluicao >= 0.05 e poluicao <= 0.25){
-		escreva("O índice de poluição está aceitável.")
-	}
+	se (poluicao < 0.3)
+		escreva("O índice de poluição está aceitável!")
 
-	senao se (poluicao == 0.3){
+	senao se (poluicao >= 0.3 e poluicao < 0.4){
 		escreva("Devido ao alto índice de poluição, as indústrias do grupo 1"
 		+ " \nprecisam suspender suas atividades.")
 	}
 
-	senao se (poluicao == 0.4){
+	senao se (poluicao >= 0.4 e poluicao < 0.5){
 		escreva("Devido ao alto índice de poluição, as indústrias dos grupos 2 e 3"
 		+ " \nprecisam suspender suas atividades.")
 	}
 
-	senao se (poluicao == 0.5){
+	senao se (poluicao >= 0.5){
 		escreva("Devido ao alto índice de poluição, todas as indústrias"
 		+ " \nprecisam suspender suas atividades.")
 	}
+	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -38,7 +38,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 0; 
+ * @POSICAO-CURSOR = 124; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
